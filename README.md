@@ -1,4 +1,4 @@
-# expense-tracker
+# Expense Tracker
 
 To install dependencies:
 
@@ -9,7 +9,13 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun start
+```
+
+To start the dev server:
+
+```bash
+bun dev
 ```
 
 This project was created using `bun init` in bun v1.2.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
