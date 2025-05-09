@@ -1,11 +1,11 @@
 {
   "name": "expense-tracker",
-  "module": "index.ts",
+  "module": "server/ index.ts",
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run index.ts",
-    "dev": "bun --watch run index.ts"
+    "start": "bun run server/index.ts",
+    "dev": "bun --watch run server/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
