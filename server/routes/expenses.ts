@@ -71,6 +71,11 @@ expensesRoute
     }
     return c.json({ expense });
   })
+  .get("/total-spend", (c) => {
+    return c.json({
+      totalSpend: fakeExpenses.reduce((acc, e) => acc + e.amount, 0),
+    });
+  })
   .delete("/:id{[0-9]+}", (c) => {
     const id = Number.parseInt(c.req.param("id"));
     const index = fakeExpenses.findIndex((e) => e.id === id);
