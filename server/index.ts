@@ -1,10 +1,11 @@
 import app from "./app";
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3000;
 
-Bun.serve({
+const server = Bun.serve({
   port,
+  hostname: "0.0.0.0",
   fetch: app.fetch,
 });
 
-console.log(`Server running on http://localhost:${port}`);
+console.log(`Server running on port ${server.port}`);
